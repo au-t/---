@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>个人收藏</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/templatemo_style.css">
+    <link rel="icon" href="./picture/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--End-->
+    <script>
+        fetch('https://v1.hitokoto.cn')
+            .then(function (res) {
+                return res.json();
+            })
+            .then(function (data) {
+                var hitokoto = document.getElementById('hitokoto');
+                hitokoto.innerText = data.hitokoto;
+            })
+            .catch(function (err) {
+                console.error(err);
+            })
+    </script>
+
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div id="menu-container">
+        <div id="menu-1" class="homepage home-section container">
+            <div class="home-intro text-center">
+                <h2 class="welcome-title animated fadeInLeft">我的收藏<p>My Collection.</p>
+                </h2>
+                <div style="border-bottom: 2px solid #46494f;"></div>
+
+                <div class="projects-header">
+                    <h3 class="animated fadeInRight">同感集</h3>
+                    <h3 class="animated fadeInRight">Empathy</h3><br /><br />
+                    <!-- <h3 class="animated fadeInLeft">如果你不曾来过</h3> -->
+                    <p class="animated fadeInLeft">
+                        我见鱼市星宿，暗哑于深秋。 <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;<br />
+                        星星在闪烁，像我眼里的光，忽明忽暗。 <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;<br />
+                        眼睛对低垂的黄昏装傻,<br />抬头是飘黏的满月。<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;<br />
+                        听从圣经<br />我让眼睛去捕风<br />
+                        过滤之后蒸发<br />物质循环发生变化<br />
+                        在有光的夜晚<br />给影子上色<br />
+                        真空保存&nbsp;小心装裱<br />
+                        过去的声音没有了介质<br />新世纪的电台频道还在增加。<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;<br />
+                        不是天上人，自喻落凡尘。<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;<br />
+                        几秒钟的光明就能拭去那好几年的黑暗。<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;<br />
+                        春山岑寂是微醺夜的绵长一笔，<br />我爱你要写进诗里。<br />
+
+                    </p>
+                </div>
+                <div class="projects-holder">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 p-1 animated umScaleIn">
+                            <div class="project-item">
+                                <img src="picture/1.jpg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 p-2 animated umScaleIn">
+                            <div class="project-item">
+                                <img src="picture/2.jpg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 p-3 animated umScaleIn">
+                            <div class="project-item">
+                                <img src="picture/3.jpg" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 p-4 animated umScaleIn">
+                            <div class="project-item animated umScaleIn">
+                                <img src="picture/4.jpg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="project-item p-5 animated umScaleIn">
+                                <img src="picture/5.jpg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="project-item p-6 animated umScaleIn">
+                                <img src="picture/6.jpg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="project-item p-7 animated umScaleIn">
+                                <img src="picture/7.jpg" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div style="border-bottom: 2px solid #46494f;"></div> <br />
+                <footer>
+                    <div class="blog-header text-center">
+                        <div class="row">
+                            <div class="col-md-12 copyright">
+                                <p><a href="../index.html">回到首页</a></p>
+                                <p>Copyright &copy; 2021&nbsp;&nbsp;Company By&nbsp;&nbsp;<a
+                                        href="">au-t</a>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- templatemo 421 raleway -->
+                <span class="border-top"></span>
+                <span class="border-left"></span>
+                <span class="border-right"></span>
+                <span class="border-bottom"></span>
+                <!-- 网易云音乐 -->
+                <embed frameborder="no" border="0" marginwidth="0" marginheight="0" width=0 height=0
+                    src="//music.163.com/outchain/player?type=0&id=4950890732&auto=1&height=0"></embed>
+</body>
+
+</html>

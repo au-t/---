@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>个人爱好</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/templatemo_style.css">
+    <link rel="icon" href="./picture/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--End-->
+    <script>
+        fetch('https://v1.hitokoto.cn')
+            .then(function (res) {
+                return res.json();
+            })
+            .then(function (data) {
+                var hitokoto = document.getElementById('hitokoto');
+                hitokoto.innerText = data.hitokoto;
+            })
+            .catch(function (err) {
+                console.error(err);
+            })
+    </script>
+
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+
+    <!--这里是上方的留白，万一以后想加个导航什么的呢。。。。-->
+    <header class="site-header container animated fadeInDown">
+        <div class="header-wrapper"></div>
+    </header>
+
+    <div id="menu-container">
+        <div id="menu-1" class="homepage home-section container">
+            <div class="home-intro text-center">
+                <h2 class="welcome-title animated fadeInLeft">au-t<p>生活本沉闷，跑起来才有风。<br />Life is dull, but running is
+                        windy.</p>
+                </h2>
+                <p class="animated fadeInRight">若无闲事挂心头，便是人间好时节。<br />Away from earthly desires，
+                    every season will be the time of light<br />人生哪能多如意，万事只求半称心。<br />Life which can be more satisfied,
+                    everything
+                    is only half gratified.</p>
+            </div>
+            <div style="border-bottom: 2px solid #46494f;"></div>
+            <br /><br />
+
+            <div class="projects-header">
+                <h3 class="animated fadeInRight">我的爱好</h3>
+                <h3 class="animated fadeInRight">My hobby</h3><br /><br />
+                <p class="animated fadeInLeft">我偏爱摄影，是一种记录。<br /> I prefer photography,
+                    which is a kind of record.<br />
+                    我爱读万卷书，更爱行万里路。<br />I love to read thousands of books,
+                    more love to travel thousands of miles.<br />
+                    我偏爱自由无拘的无限值，胜过学术性被区分的正负值。<br /> I prefer free and unbridled infinite values
+                    to academically distinguished positive and negative values.<br />
+                    我偏爱牢记除此以外所有可能存在的理由，不假外求。<br />I prefer to keep in mind all the possible reasons beyond that, no
+                    matter what.
+                </p>
+            </div>
+            <div class="projects-holder">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 p-1 animated umScaleIn">
+                        <div class="project-item">
+                            <img src="picture/1.jpg" alt="">
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 p-2 animated umScaleIn">
+                        <div class="project-item">
+                            <img src="picture/2.jpg" alt="">
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 p-3 animated umScaleIn">
+                        <div class="project-item">
+                            <img src="picture/3.jpg" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 p-4 animated umScaleIn">
+                        <div class="project-item animated umScaleIn">
+                            <img src="picture/4.jpg" alt="">
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="project-item p-5 animated umScaleIn">
+                            <img src="picture/5.jpg" alt="">
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="project-item p-6 animated umScaleIn">
+                            <img src="picture/6.jpg" alt="">
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="project-item p-7 animated umScaleIn">
+                            <img src="picture/7.jpg" alt="">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div style="border-bottom: 2px solid #46494f;"></div> <br />
+            <footer>
+                <div class="blog-header text-center">
+                    <div class="row">
+                        <div class="col-md-12 copyright">
+                            <p><a href="../index.html">回到首页</a></p>
+                            <p>Copyright &copy; 2021&nbsp;&nbsp;Company By&nbsp;&nbsp;<a
+                                    href="https://github.com/au-t">au-t</a>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- templatemo 421 raleway -->
+            <span class="border-top"></span>
+            <span class="border-left"></span>
+            <span class="border-right"></span>
+            <span class="border-bottom"></span>
+            <!-- 网易云音乐 -->
+            <embed frameborder="no" border="0" marginwidth="0" marginheight="0" width=0 height=0
+                src="//music.163.com/outchain/player?type=0&id=4950890732&auto=1&height=0"></embed>
+</body>
+
+</html>
